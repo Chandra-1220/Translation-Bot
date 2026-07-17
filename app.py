@@ -1,7 +1,7 @@
 # app.py
 
 # ---- Page Config ----
-st.set_page_config(page_title="Language Bridge", page_icon="🗺️", layout="centered")
+st.set_page_config(page_title="Lingua Bridge", page_icon="🗺️", layout="centered")
 
 # ---- Custom CSS ----
 st.markdown("""
