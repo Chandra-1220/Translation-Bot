@@ -1,5 +1,7 @@
 # app.py
 import streamlit as st
+from transformers import pipeline   # ← add this line
+
 # ---- Page Config ----
 st.set_page_config(page_title="Lingua Bridge", page_icon="🗺️", layout="centered")
 
@@ -12,7 +14,6 @@ except Exception as e:
 
 from transformers.utils import is_torch_available
 st.write(f"Transformers sees torch as available: {is_torch_available()}")
-
 
 # ---- Custom CSS ----
 st.markdown("""
