@@ -211,7 +211,7 @@ def load_translator():
     return pipeline(
         "translation",
         model="facebook/nllb-200-distilled-600M",
-        device=0  # remove or set -1 for CPU-only environments
+        
     )
 
 translator = load_translator()
