@@ -6,14 +6,6 @@ from transformers import pipeline   # ← add this line
 st.set_page_config(page_title="Lingua Bridge", page_icon="🗺️", layout="centered")
 
 # ---- Diagnostics (after set_page_config) ----
-try:
-    import torch
-    st.write(f"✅ Torch version: {torch.__version__}")
-except Exception as e:
-    st.write(f"❌ Torch failed to import: {e}")
-
-from transformers.utils import is_torch_available
-st.write(f"Transformers sees torch as available: {is_torch_available()}")
 
 # ---- Custom CSS ----
 st.markdown("""
