@@ -1,19 +1,7 @@
 # app.py
-import streamlit as st
-
-try:
-    import torch
-    st.write(f"✅ Torch version: {torch.__version__}")
-except Exception as e:
-    st.write(f"❌ Torch failed to import: {e}")
-
-from transformers.utils import is_torch_available
-st.write(f"Transformers sees torch as available: {is_torch_available()}")
-import streamlit as st
-from transformers import pipeline
 
 # ---- Page Config ----
-st.set_page_config(page_title="Lingua Bridge", page_icon="🗺️", layout="centered")
+st.set_page_config(page_title="Language Bridge", page_icon="🗺️", layout="centered")
 
 # ---- Custom CSS ----
 st.markdown("""
